@@ -24,17 +24,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="P9B-fb-Dqz">
-                                <rect key="frame" x="85" y="20" width="20" height="20"/>
+                                <rect key="frame" x="96" y="21" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jh2-Le-ray" firstAttribute="leading" secondItem="iGF-MN-qGC" secondAttribute="leading" constant="20" id="35a-sm-ihJ"/>
-                            <constraint firstAttribute="trailing" secondItem="P9B-fb-Dqz" secondAttribute="trailing" constant="20" id="79u-HE-Klz"/>
+                            <constraint firstItem="P9B-fb-Dqz" firstAttribute="top" secondItem="iGF-MN-qGC" secondAttribute="top" constant="21" id="9do-8g-dFz"/>
+                            <constraint firstAttribute="bottom" secondItem="P9B-fb-Dqz" secondAttribute="bottom" constant="20" id="APE-Q4-Ndc"/>
                             <constraint firstAttribute="bottom" secondItem="jh2-Le-ray" secondAttribute="bottom" constant="20" id="BRF-SS-yej"/>
-                            <constraint firstItem="P9B-fb-Dqz" firstAttribute="top" secondItem="iGF-MN-qGC" secondAttribute="top" constant="20" id="Vjk-dx-Fd5"/>
                             <constraint firstItem="jh2-Le-ray" firstAttribute="top" secondItem="iGF-MN-qGC" secondAttribute="top" constant="20" id="eKD-T5-uTG"/>
-                            <constraint firstAttribute="bottom" secondItem="P9B-fb-Dqz" secondAttribute="bottom" constant="21" id="iMQ-w1-NsT"/>
+                            <constraint firstAttribute="trailing" secondItem="P9B-fb-Dqz" secondAttribute="trailing" constant="9" id="ouo-2x-1yv"/>
                             <constraint firstAttribute="trailing" secondItem="jh2-Le-ray" secondAttribute="trailing" constant="37" id="xCe-gc-nDf"/>
                         </constraints>
                     </view>

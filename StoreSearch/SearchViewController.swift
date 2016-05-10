@@ -12,7 +12,9 @@ class SearchViewController: UIViewController {
 
   @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var segmentedControl: UISegmentedControl!
 
+  var dataTask: NSURLSessionDataTask?
   var searchResults = [SearchResult]()
   var hasSearched = false
   var isLoading = false
@@ -25,7 +27,7 @@ class SearchViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    tableView.contentInset = UIEdgeInsets(top: 64, left:0, bottom:0, right: 0)
+    tableView.contentInset = UIEdgeInsets(top: 108, left:0, bottom:0, right: 0)
     tableView.rowHeight = 80
 
     var cellNib = UINib(nibName: TableViewCellIdentifiers.searchResultCell, bundle: nil)
@@ -45,30 +47,29 @@ class SearchViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  func urlWithSearchText(searchText: String) -> NSURL {
+  @IBAction func segmentedChanged(sender: UISegmentedControl) {
+    performSearch()
+  }
+
+  func urlWithSearchText(searchText: String, category: Int) -> NSURL {
+    let entityName: String
+      switch category {
+      case 1: entityName = "musicTrack"
+      case 2: entityName = "software"
+      case 3: entityName = "ebook"
+      default: entityName = ""
+    }
     let escapedText = searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
-    let urlString = String(format: "https://itunes.apple.com/search?term=%@", escapedText)
+    let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=200&entity=%@", escapedText, entityName)
     let url = NSURL(string: urlString)
     return url!
   }
 
-  func performStoreRequestWithURL(url: NSURL) -> String? {
-    do {
-      return try String(contentsOfURL: url, encoding: NSUTF8StringEncoding)
-    } catch {
-      print("Download error: \(error)")
-      return nil
-    }
-  }
-
-  func parseJSON(jsonString: String) -> [String: AnyObject]? {
-    guard let data = jsonString.dataUsingEncoding(NSUTF8StringEncoding)
-      else { return nil }
-
+  func parseJSON(data: NSData) -> [String: AnyObject]? {
     do {
       return try NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String: AnyObject]
     } catch {
-      print("JSON Parsing error: '\(error)")
+      print("JSON Error: \(error)")
       return nil
     }
   }
@@ -218,8 +219,14 @@ extension SearchViewController: UISearchBarDelegate {
   }
 
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    performSearch()
+  }
+
+  func performSearch() {
     if !searchBar.text!.isEmpty {
       searchBar.resignFirstResponder()
+
+      dataTask?.cancel()
 
       isLoading = true
       tableView.reloadData()
@@ -227,30 +234,43 @@ extension SearchViewController: UISearchBarDelegate {
       hasSearched = true
       searchResults = [SearchResult]()
 
-      let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+      let url = urlWithSearchText(searchBar.text!, category: segmentedControl.selectedSegmentIndex)
+      let session = NSURLSession.sharedSession()
+      dataTask = session.dataTaskWithURL(url, completionHandler: {
+        data, response, error in
 
-      dispatch_async(queue) {
-        let url = self.urlWithSearchText(searchBar.text!)
+        if let error = error where error.code == -999 {
+          return  // Search was cancelled
 
-        if let jsonString = self.performStoreRequestWithURL(url),
-           let dictionary = self.parseJSON(jsonString) {
+        } else if let httpResponse = response as? NSHTTPURLResponse where httpResponse.statusCode == 200 {
 
-          self.searchResults = self.parseDictionary(dictionary)
-          self.searchResults.sortInPlace(<)
+          if let data = data, dictionary = self.parseJSON(data) {
+            self.searchResults = self.parseDictionary(dictionary)
+            self.searchResults.sortInPlace(<)
 
-          dispatch_async(dispatch_get_main_queue()) {
-            self.isLoading = false
-            self.tableView.reloadData()
+            dispatch_async(dispatch_get_main_queue()) {
+              self.isLoading = false
+              self.tableView.reloadData()
+            }
+            return
           }
-          return
+
+        } else {
+          print("Failure! \(response!)")
         }
-        
+
         dispatch_async(dispatch_get_main_queue()) {
+          self.hasSearched = false
+          self.isLoading = false
+          self.tableView.reloadData()
           self.showNetworkError()
         }
-      }
+      })
+
+      dataTask?.resume()
     }
   }
+  
 }
 
 extension SearchViewController: UITableViewDataSource {
