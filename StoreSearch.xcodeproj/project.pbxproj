@@ -11,7 +11,6 @@
 		A875EC221CE14FB10073F1FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC211CE14FB10073F1FB /* SearchViewController.swift */; };
 		A875EC251CE14FB10073F1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875EC231CE14FB10073F1FB /* Main.storyboard */; };
 		A875EC271CE14FB10073F1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A875EC261CE14FB10073F1FB /* Assets.xcassets */; };
-		A875EC2A1CE14FB10073F1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875EC281CE14FB10073F1FB /* LaunchScreen.storyboard */; };
 		A875EC321CE16A400073F1FB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC311CE16A400073F1FB /* SearchResult.swift */; };
 		A875EC371CE173BF0073F1FB /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A875EC361CE173BF0073F1FB /* SearchResultCell.xib */; };
 		A875EC391CE177270073F1FB /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC381CE177270073F1FB /* SearchResultCell.swift */; };
@@ -25,7 +24,6 @@
 		A875EC211CE14FB10073F1FB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A875EC241CE14FB10073F1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A875EC261CE14FB10073F1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A875EC291CE14FB10073F1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A875EC2B1CE14FB10073F1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A875EC311CE16A400073F1FB /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../SearchResult.swift; sourceTree = "<group>"; };
 		A875EC361CE173BF0073F1FB /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			children = (
 				A875EC1F1CE14FB10073F1FB /* AppDelegate.swift */,
 				A875EC261CE14FB10073F1FB /* Assets.xcassets */,
-				A875EC281CE14FB10073F1FB /* LaunchScreen.storyboard */,
 				A875EC361CE173BF0073F1FB /* SearchResultCell.xib */,
 				A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */,
 				A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */,
@@ -161,7 +158,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A875EC2A1CE14FB10073F1FB /* LaunchScreen.storyboard in Resources */,
 				A875EC271CE14FB10073F1FB /* Assets.xcassets in Resources */,
 				A89B9EA51CE1B3B6009C5A23 /* LoadingCell.xib in Resources */,
 				A875EC371CE173BF0073F1FB /* SearchResultCell.xib in Resources */,
@@ -193,14 +189,6 @@
 				A875EC241CE14FB10073F1FB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A875EC281CE14FB10073F1FB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A875EC291CE14FB10073F1FB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
