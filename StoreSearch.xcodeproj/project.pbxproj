@@ -12,6 +12,7 @@
 		A875EC251CE14FB10073F1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875EC231CE14FB10073F1FB /* Main.storyboard */; };
 		A875EC271CE14FB10073F1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A875EC261CE14FB10073F1FB /* Assets.xcassets */; };
 		A875EC2A1CE14FB10073F1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875EC281CE14FB10073F1FB /* LaunchScreen.storyboard */; };
+		A875EC321CE16A400073F1FB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC311CE16A400073F1FB /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A875EC261CE14FB10073F1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A875EC291CE14FB10073F1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A875EC2B1CE14FB10073F1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A875EC311CE16A400073F1FB /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		A875EC1E1CE14FB10073F1FB /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				A875EC1F1CE14FB10073F1FB /* AppDelegate.swift */,
-				A875EC211CE14FB10073F1FB /* SearchViewController.swift */,
+				A875EC331CE16A600073F1FB /* Supporting Files */,
+				A875EC341CE16A7E0073F1FB /* Views */,
+				A875EC351CE16A8D0073F1FB /* Models */,
 				A875EC231CE14FB10073F1FB /* Main.storyboard */,
+			);
+			path = StoreSearch;
+			sourceTree = "<group>";
+		};
+		A875EC331CE16A600073F1FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A875EC1F1CE14FB10073F1FB /* AppDelegate.swift */,
 				A875EC261CE14FB10073F1FB /* Assets.xcassets */,
 				A875EC281CE14FB10073F1FB /* LaunchScreen.storyboard */,
 				A875EC2B1CE14FB10073F1FB /* Info.plist */,
 			);
-			path = StoreSearch;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A875EC341CE16A7E0073F1FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A875EC211CE14FB10073F1FB /* SearchViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A875EC351CE16A8D0073F1FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A875EC311CE16A400073F1FB /* SearchResult.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A875EC221CE14FB10073F1FB /* SearchViewController.swift in Sources */,
+				A875EC321CE16A400073F1FB /* SearchResult.swift in Sources */,
 				A875EC201CE14FB10073F1FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +314,7 @@
 				A875EC301CE14FB10073F1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
