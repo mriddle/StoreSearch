@@ -16,6 +16,7 @@
 		A875EC371CE173BF0073F1FB /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A875EC361CE173BF0073F1FB /* SearchResultCell.xib */; };
 		A875EC391CE177270073F1FB /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC381CE177270073F1FB /* SearchResultCell.swift */; };
 		A875EC3B1CE18F830073F1FB /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */; };
+		A89B9EA51CE1B3B6009C5A23 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A875EC361CE173BF0073F1FB /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		A875EC381CE177270073F1FB /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingCell.xib; path = ../LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				A875EC261CE14FB10073F1FB /* Assets.xcassets */,
 				A875EC281CE14FB10073F1FB /* LaunchScreen.storyboard */,
 				A875EC361CE173BF0073F1FB /* SearchResultCell.xib */,
+				A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */,
 				A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */,
 				A875EC2B1CE14FB10073F1FB /* Info.plist */,
 			);
@@ -160,6 +163,7 @@
 			files = (
 				A875EC2A1CE14FB10073F1FB /* LaunchScreen.storyboard in Resources */,
 				A875EC271CE14FB10073F1FB /* Assets.xcassets in Resources */,
+				A89B9EA51CE1B3B6009C5A23 /* LoadingCell.xib in Resources */,
 				A875EC371CE173BF0073F1FB /* SearchResultCell.xib in Resources */,
 				A875EC3B1CE18F830073F1FB /* NothingFoundCell.xib in Resources */,
 				A875EC251CE14FB10073F1FB /* Main.storyboard in Resources */,
