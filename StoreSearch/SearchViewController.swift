@@ -31,6 +31,8 @@ class SearchViewController: UIViewController {
 
     cellNib = UINib(nibName: TableViewCellIdentifiers.nothingFoundCell, bundle: nil)
     tableView.registerNib(cellNib, forCellReuseIdentifier: TableViewCellIdentifiers.nothingFoundCell)
+
+    searchBar.becomeFirstResponder()
   }
 
   override func didReceiveMemoryWarning() {
@@ -85,7 +87,7 @@ extension SearchViewController: UITableViewDataSource {
 
       cell.nameLabel!.text = searchResult.name
       cell.artistNameLabel!.text = searchResult.artistName
-      
+
       return cell
     }
   }
