@@ -65,10 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				A875EC331CE16A600073F1FB /* Supporting Files */,
-				A875EC341CE16A7E0073F1FB /* Views */,
+				A875EC341CE16A7E0073F1FB /* Controllers */,
+				A89B9EA81CE1CA32009C5A23 /* Views */,
 				A875EC351CE16A8D0073F1FB /* Models */,
 				A875EC231CE14FB10073F1FB /* Main.storyboard */,
-				A89B9EA61CE1C7AA009C5A23 /* UIImageView+DownloadImage.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -78,21 +78,19 @@
 			children = (
 				A875EC1F1CE14FB10073F1FB /* AppDelegate.swift */,
 				A875EC261CE14FB10073F1FB /* Assets.xcassets */,
-				A875EC361CE173BF0073F1FB /* SearchResultCell.xib */,
-				A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */,
-				A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */,
 				A875EC2B1CE14FB10073F1FB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A875EC341CE16A7E0073F1FB /* Views */ = {
+		A875EC341CE16A7E0073F1FB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A89B9EA61CE1C7AA009C5A23 /* UIImageView+DownloadImage.swift */,
 				A875EC211CE14FB10073F1FB /* SearchViewController.swift */,
 				A875EC381CE177270073F1FB /* SearchResultCell.swift */,
 			);
-			name = Views;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		A875EC351CE16A8D0073F1FB /* Models */ = {
@@ -101,6 +99,16 @@
 				A875EC311CE16A400073F1FB /* SearchResult.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		A89B9EA81CE1CA32009C5A23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A875EC361CE173BF0073F1FB /* SearchResultCell.xib */,
+				A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */,
+				A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
