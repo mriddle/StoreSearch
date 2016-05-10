@@ -51,6 +51,15 @@ class SearchViewController: UIViewController {
     performSearch()
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "ShowDetail" {
+      let detailViewController = segue.destinationViewController as! DetailViewController
+      let indexPath = sender as! NSIndexPath
+      let searchResult = searchResults[indexPath.row]
+      detailViewController.searchResult = searchResult
+    }
+  }
+
   func urlWithSearchText(searchText: String, category: Int) -> NSURL {
     let entityName: String
       switch category {
