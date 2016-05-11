@@ -5,6 +5,36 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Landscape View Controller-->
+        <scene sceneID="c8D-3F-HDN">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeViewController" id="8Ux-45-7Xd" customClass="LandscapeViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vmH-sj-R9n"/>
+                        <viewControllerLayoutGuide type="bottom" id="HgR-9F-zZP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NY1-py-rF4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We're in landscape" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgH-xr-Aga">
+                                <rect key="frame" x="228" y="290" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YgH-xr-Aga" firstAttribute="centerY" secondItem="NY1-py-rF4" secondAttribute="centerY" id="9Pl-MA-hCi"/>
+                            <constraint firstItem="YgH-xr-Aga" firstAttribute="centerX" secondItem="NY1-py-rF4" secondAttribute="centerX" id="wwD-vZ-BXb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAb-tE-38W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="1309"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="PaL-He-u2t">
             <objects>
