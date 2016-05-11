@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qoV-xc-bij">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,6 +25,9 @@
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Exv-ni-Mrn">
                                 <rect key="frame" x="280" y="500" width="39" height="37"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="500" width="40" height="37"/>
+                                </variation>
                                 <connections>
                                     <action selector="pageChanged:" destination="8Ux-45-7Xd" eventType="valueChanged" id="2su-gB-ZCE"/>
                                 </connections>
@@ -40,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAb-tE-38W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="736" y="1269"/>
+            <point key="canvasLocation" x="68" y="962"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="PaL-He-u2t">
@@ -64,6 +67,12 @@
                                             <constraint firstAttribute="height" constant="15" id="wLl-bl-Nqe"/>
                                         </constraints>
                                         <state key="normal" image="CloseButton"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="Z41-ga-HiL"/>
+                                                <exclude reference="wLl-bl-Nqe"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="close" destination="38D-nI-k6a" eventType="touchUpInside" id="zKu-rZ-qNl"/>
                                         </connections>
@@ -157,6 +166,15 @@
                                         <exclude reference="tuS-mc-IUp"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <exclude reference="iJK-Vo-Aat"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="77I-gQ-lfE"/>
+                                        <exclude reference="wcx-wk-2wN"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -165,6 +183,7 @@
                             <constraint firstItem="vJp-Qr-mgH" firstAttribute="centerY" secondItem="yUA-iX-AQV" secondAttribute="centerY" id="ImJ-BT-ZOt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lBE-Vq-kQb"/>
                     <connections>
                         <outlet property="artistNameLabel" destination="TvQ-aN-J2j" id="bEF-sU-0cH"/>
                         <outlet property="artworkImageView" destination="plL-zo-Xur" id="Wgh-O7-yyV"/>
@@ -177,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJW-Ge-Je9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="962"/>
+            <point key="canvasLocation" x="1404" y="962"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -251,6 +270,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="720" y="204"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ENI-fC-NAr">
+            <objects>
+                <navigationController id="L4f-tv-XJ1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ezV-0i-Axt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="38D-nI-k6a" kind="relationship" relationship="rootViewController" id="oqL-rh-lWa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5K-D6-pgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="-550"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="eyM-Bn-C12">
+            <objects>
+                <splitViewController id="qoV-xc-bij" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="masterViewController" id="UjY-vH-amV"/>
+                        <segue destination="L4f-tv-XJ1" kind="relationship" relationship="detailViewController" id="1D2-EF-LUT"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23S-sP-vTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="-550"/>
         </scene>
     </scenes>
     <resources>
