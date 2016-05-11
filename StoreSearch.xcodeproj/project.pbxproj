@@ -24,6 +24,7 @@
 		A89B9EB21CE1CAE3009C5A23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB11CE1CAE3009C5A23 /* DetailViewController.swift */; };
 		A89B9EB41CE2B261009C5A23 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB31CE2B261009C5A23 /* LandscapeViewController.swift */; };
 		A89B9EB61CE2BBAE009C5A23 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB51CE2BBAE009C5A23 /* FadeOutAnimationController.swift */; };
+		A89B9EB81CE2F143009C5A23 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB71CE2F143009C5A23 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A89B9EB11CE1CAE3009C5A23 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A89B9EB31CE2B261009C5A23 /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		A89B9EB51CE2BBAE009C5A23 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		A89B9EB71CE2F143009C5A23 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		A875EC351CE16A8D0073F1FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A89B9EB71CE2F143009C5A23 /* Search.swift */,
 				A875EC311CE16A400073F1FB /* SearchResult.swift */,
 			);
 			name = Models;
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89B9EB81CE2F143009C5A23 /* Search.swift in Sources */,
 				A875EC221CE14FB10073F1FB /* SearchViewController.swift in Sources */,
 				A875EC321CE16A400073F1FB /* SearchResult.swift in Sources */,
 				A89B9EB61CE2BBAE009C5A23 /* FadeOutAnimationController.swift in Sources */,
