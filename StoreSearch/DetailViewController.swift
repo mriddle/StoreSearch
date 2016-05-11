@@ -110,7 +110,7 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
     case .Slide:
       return SlideOutAnimationController()
     case .Fade:
-      FadeOutAnimationController()
+      return FadeOutAnimationController()
     }
   }
 }
