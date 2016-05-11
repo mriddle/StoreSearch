@@ -7,9 +7,13 @@ class LandscapeViewController: UIViewController {
   var searchResults = [SearchResult]()
 
   private var firstTime = true
+  private var downloadTasks = [NSURLSessionDownloadTask]()
 
   deinit {
     print("deinit \(self)")
+    for task in downloadTasks {
+      task.cancel()
+    }
   }
 
   override func viewDidLoad() {
@@ -93,9 +97,9 @@ class LandscapeViewController: UIViewController {
     var column = 0
     var x = marginX
 
-    for _ in searchResults {
-      let button = UIButton(type: .System)
-      button.backgroundColor = UIColor.whiteColor()
+    for searchResult in searchResults {
+      let button = UIButton(type: .Custom)
+      button.setBackgroundImage(UIImage(named: "LandscapeButton"), forState: .Normal)
 
       button.frame = CGRect(
         x: x + paddingHorz,
@@ -105,7 +109,7 @@ class LandscapeViewController: UIViewController {
       )
 
       scrollView.addSubview(button)
-//      downloadImageForSearchResult(searchResult, andPlaceOnButton: button)
+      downloadImageForSearchResult(searchResult, andPlaceOnButton: button)
 
       row += 1
       if row == rowsPerPage {
@@ -126,6 +130,25 @@ class LandscapeViewController: UIViewController {
 
     pageControl.numberOfPages = numPages
     pageControl.currentPage = 0
+  }
+
+  private func downloadImageForSearchResult(searchResult: SearchResult, andPlaceOnButton button: UIButton) {
+    if let url = NSURL(string: searchResult.artworkURL60) {
+      let session = NSURLSession.sharedSession()
+      let downloadTask = session.downloadTaskWithURL(url) {
+        [weak button] url, response, error in
+
+        if error == nil, let url = url, data = NSData(contentsOfURL: url), image = UIImage(data: data) {
+          dispatch_async(dispatch_get_main_queue()) {
+            if let button = button {
+              button.setImage(image, forState: .Normal)
+            }
+          }
+        }
+      }
+      downloadTask.resume()
+      downloadTasks.append(downloadTask)
+    }
   }
 }
 
