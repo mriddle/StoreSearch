@@ -12,10 +12,7 @@
 		A875EC251CE14FB10073F1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875EC231CE14FB10073F1FB /* Main.storyboard */; };
 		A875EC271CE14FB10073F1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A875EC261CE14FB10073F1FB /* Assets.xcassets */; };
 		A875EC321CE16A400073F1FB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC311CE16A400073F1FB /* SearchResult.swift */; };
-		A875EC371CE173BF0073F1FB /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A875EC361CE173BF0073F1FB /* SearchResultCell.xib */; };
 		A875EC391CE177270073F1FB /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875EC381CE177270073F1FB /* SearchResultCell.swift */; };
-		A875EC3B1CE18F830073F1FB /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */; };
-		A89B9EA51CE1B3B6009C5A23 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */; };
 		A89B9EA71CE1C7AA009C5A23 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EA61CE1C7AA009C5A23 /* UIImageView+DownloadImage.swift */; };
 		A89B9EAA1CE1CAB3009C5A23 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EA91CE1CAB3009C5A23 /* DimmingPresentationController.swift */; };
 		A89B9EAC1CE1CAC5009C5A23 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EAB1CE1CAC5009C5A23 /* GradientView.swift */; };
@@ -25,6 +22,9 @@
 		A89B9EB41CE2B261009C5A23 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB31CE2B261009C5A23 /* LandscapeViewController.swift */; };
 		A89B9EB61CE2BBAE009C5A23 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB51CE2BBAE009C5A23 /* FadeOutAnimationController.swift */; };
 		A89B9EB81CE2F143009C5A23 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EB71CE2F143009C5A23 /* Search.swift */; };
+		A89B9EC01CE2FC2D009C5A23 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89B9EC21CE2FC2D009C5A23 /* NothingFoundCell.xib */; };
+		A89B9EC41CE2FC92009C5A23 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89B9EC61CE2FC92009C5A23 /* LoadingCell.xib */; };
+		A89B9ECB1CE2FDB2009C5A23 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89B9ECD1CE2FDB2009C5A23 /* SearchResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +35,7 @@
 		A875EC261CE14FB10073F1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A875EC2B1CE14FB10073F1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A875EC311CE16A400073F1FB /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../SearchResult.swift; sourceTree = "<group>"; };
-		A875EC361CE173BF0073F1FB /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		A875EC381CE177270073F1FB /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
-		A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingCell.xib; path = ../LoadingCell.xib; sourceTree = "<group>"; };
 		A89B9EA61CE1C7AA009C5A23 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		A89B9EA91CE1CAB3009C5A23 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		A89B9EAB1CE1CAC5009C5A23 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -48,6 +45,12 @@
 		A89B9EB31CE2B261009C5A23 /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		A89B9EB51CE2BBAE009C5A23 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 		A89B9EB71CE2F143009C5A23 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		A89B9EC11CE2FC2D009C5A23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		A89B9EC31CE2FC4F009C5A23 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		A89B9EC51CE2FC92009C5A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
+		A89B9EC81CE2FCA5009C5A23 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
+		A89B9ECA1CE2FD52009C5A23 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		A89B9ECC1CE2FDB2009C5A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +131,9 @@
 		A89B9EA81CE1CA32009C5A23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A875EC361CE173BF0073F1FB /* SearchResultCell.xib */,
-				A89B9EA41CE1B3B6009C5A23 /* LoadingCell.xib */,
-				A875EC3A1CE18F830073F1FB /* NothingFoundCell.xib */,
+				A89B9ECD1CE2FDB2009C5A23 /* SearchResultCell.xib */,
+				A89B9EC61CE2FC92009C5A23 /* LoadingCell.xib */,
+				A89B9EC21CE2FC2D009C5A23 /* NothingFoundCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = A875EC131CE14FB10073F1FB;
 			productRefGroup = A875EC1D1CE14FB10073F1FB /* Products */;
@@ -194,9 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A875EC271CE14FB10073F1FB /* Assets.xcassets in Resources */,
-				A89B9EA51CE1B3B6009C5A23 /* LoadingCell.xib in Resources */,
-				A875EC371CE173BF0073F1FB /* SearchResultCell.xib in Resources */,
-				A875EC3B1CE18F830073F1FB /* NothingFoundCell.xib in Resources */,
+				A89B9EC41CE2FC92009C5A23 /* LoadingCell.xib in Resources */,
+				A89B9ECB1CE2FDB2009C5A23 /* SearchResultCell.xib in Resources */,
+				A89B9EC01CE2FC2D009C5A23 /* NothingFoundCell.xib in Resources */,
 				A875EC251CE14FB10073F1FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,8 +235,36 @@
 			isa = PBXVariantGroup;
 			children = (
 				A875EC241CE14FB10073F1FB /* Base */,
+				A89B9ECA1CE2FD52009C5A23 /* nl */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A89B9EC21CE2FC2D009C5A23 /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A89B9EC11CE2FC2D009C5A23 /* en */,
+				A89B9EC31CE2FC4F009C5A23 /* nl */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		A89B9EC61CE2FC92009C5A23 /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A89B9EC51CE2FC92009C5A23 /* Base */,
+				A89B9EC81CE2FCA5009C5A23 /* nl */,
+			);
+			name = LoadingCell.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A89B9ECD1CE2FDB2009C5A23 /* SearchResultCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A89B9ECC1CE2FDB2009C5A23 /* Base */,
+			);
+			name = SearchResultCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
