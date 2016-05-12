@@ -27,6 +27,7 @@
 		A89B9ECB1CE2FDB2009C5A23 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89B9ECD1CE2FDB2009C5A23 /* SearchResultCell.xib */; };
 		A89B9ED01CE3020F009C5A23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A89B9ED21CE3020F009C5A23 /* Localizable.strings */; };
 		A89B9ED61CE30845009C5A23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A89B9ED81CE30845009C5A23 /* InfoPlist.strings */; };
+		A89B9EDB1CE43FAF009C5A23 /* MenuViewCntrollerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9EDA1CE43FAF009C5A23 /* MenuViewCntrollerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		A89B9ED31CE30211009C5A23 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A89B9ED71CE30845009C5A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A89B9ED91CE3084B009C5A23 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A89B9EDA1CE43FAF009C5A23 /* MenuViewCntrollerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewCntrollerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				A89B9EB11CE1CAE3009C5A23 /* DetailViewController.swift */,
 				A89B9EB31CE2B261009C5A23 /* LandscapeViewController.swift */,
 				A89B9EAD1CE1CAD1009C5A23 /* BounceAnimationController.swift */,
+				A89B9EDA1CE43FAF009C5A23 /* MenuViewCntrollerTableViewController.swift */,
 				A89B9EAE1CE1CAD1009C5A23 /* SlideOutAnimationController.swift */,
 				A89B9EAB1CE1CAC5009C5A23 /* GradientView.swift */,
 				A875EC381CE177270073F1FB /* SearchResultCell.swift */,
@@ -231,6 +234,7 @@
 				A875EC391CE177270073F1FB /* SearchResultCell.swift in Sources */,
 				A89B9EB41CE2B261009C5A23 /* LandscapeViewController.swift in Sources */,
 				A875EC201CE14FB10073F1FB /* AppDelegate.swift in Sources */,
+				A89B9EDB1CE43FAF009C5A23 /* MenuViewCntrollerTableViewController.swift in Sources */,
 				A89B9EAC1CE1CAC5009C5A23 /* GradientView.swift in Sources */,
 				A89B9EB21CE1CAE3009C5A23 /* DetailViewController.swift in Sources */,
 				A89B9EA71CE1C7AA009C5A23 /* UIImageView+DownloadImage.swift in Sources */,
